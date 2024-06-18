@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Wesley Moura</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-image: url('img/portfolio5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-color: #333;
+      color: #ffffff;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .nav-link {
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ddd;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+      font-size: 28px;
+      background-color: #fff;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .section-content {
+      margin-bottom: 30px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .skill-item {
+      text-align: center;
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .skill-icon {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      margin-bottom: 10px;
+    }
+
+    .project-links a {
+      color: #f0ebeb;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .project-links a:hover {
+      color: #666;
+    }
+
+    footer {
+      background-color: #333;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer a i {
+      font-size: 100px;
+      margin-right: 10px;
+      transition: font-size 0.3s ease;
+      color: #fff; /* Altera a cor dos ícones para branco */
+    }
+
+    footer a:hover i {
+      font-size: 120px;
+    }
+
+    /* Estilos para a seção de depoimentos */
+    #depoimentos {
+      margin-bottom: 50px;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .testimonial img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .testimonial p {
+      margin-bottom: 10px;
+    }
+
+    .testimonial span {
+      font-style: italic;
+    }
+
+    /* Estilos para a seção de certificações */
+    #certificacoes .certification img {
+      width: 200%;
+      height: auto;
+      max-width: 380px;
+      display: block;
+      margin: auto;
+    }
+
+    @media (max-width: 768px) {
+      .skills {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .skill-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="img/wesdev.jpg" alt="Foto de Wesley Moura" class="profile-image">
+  <h1>Wesley Moura</h1>
+  <h2>Desenvolvedor Back-End C# Jr</h2>
+</header>
+
+<nav>
+  <button class="nav-link" data-section="Sobre Mim">Sobre Mim</button>
+  <button class="nav-link" data-section="experiencia">Experiência</button>
+  <button class="nav-link" data-section="formacao">Formação</button>
+  <button class="nav-link" data-section="habilidades">Habilidades</button>
+  <button class="nav-link" data-section="projetos">Projetos</button>
+  <button class="nav-link" data-section="idiomas">Idiomas</button>
+  <button class="nav-link" data-section="certificacoes">Certificações</button>
+</nav>
+
+<div class="container">
+  <section id="Sobre Mim">
+    <h2 class="section-title">Sobre MIm </h2>
+    <div class="section-content">
+      <p>Sou Wesley Moura, um profissional novo na área de tecnologia, focado em HTML, CSS, Java e C#. Tenho me dedicado intensamente ao desenvolvimento Back-End, buscando sempre ampliar meus conhecimentos.</p>
+      <p>Minha trajetória inclui experiência em outras áreas, como música e operação de máquinas, o que me proporcionou habilidades variadas e um olhar multidisciplinar.</p>
+      <p>Diante do cenário atual, percebo a crescente evolução do mundo tecnológico e estou decidido a seguir carreira nesse campo. Estou entusiasmado com as oportunidades que a tecnologia oferece e comprometido em contribuir com soluções inovadoras e eficientes.</p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2 class="section-title">Experiência Profissional</h2>
+    <div class="section-content">
+      <p><strong>Desenvolvedor Back-End Jr</strong><br>
+        Blumenau<br>
+        - Desenvolvimento e manutenção de APIs RESTful em C#.<br>
+        - Implementação de funcionalidades no servidor utilizando padrões de design e melhores práticas.<br>
+        - Colaboração com equipes front-end para integrar interfaces de usuário com lógica de servidor.<br>
+        - Otimização de consultas SQL para melhorar a performance do banco de dados.</p>
+    </div>
+  </section>
+
+  <section id="formacao">
+    <h2 class="section-title">Formação</h2>
+    <div class="section-content">
+      <p>Sou um profissional multifacetado com sólida experiência na área metal-mecânica e programação. Tenho formação em:</p>
+        <ul>
+            <li>Operador e Programador de CNC</li>
+            <li>Almoxarifado com conhecimento em NR11</li>
+            <li>Máquinas Injetoras de Plástico</li>
+        </ul>
+        <p>Além dessas qualificações, sou músico, mas minha paixão pela programação me levou a buscar novas oportunidades na área de tecnologia.</p>
+
+        <h2>Formação e Experiência em Programação</h2>
+        <p>Estudei no curso da Blusoft Programa Entra21 na turma EAD 2024, onde adquiri habilidades em:</p>
+        <ul>
+            <li>Linguagem C#</li>
+            <li>Criação e Manipulação de API.NET e ASP.NET</li>
+            <li>Desenvolvimento Front-End: HTML, CSS, e JavaScript</li>
+        </ul>
+        <p>Estou há cerca de um ano focado no estudo de programação e busco continuamente aprimorar meus conhecimentos por meio de cursos gratuitos. E agora estou estudando no primeiro semestre de Engenharia de Software para alcançar um nível mais avançado na área.</p>
+
+        <h2>Objetivo</h2>
+        <p>Meu objetivo é consolidar uma carreira em programação, utilizando meu background técnico e habilidades recém-adquiridas para agregar valor e contribuir para o sucesso de projetos tecnológicos.</p>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="section-content skills">
+      <div class="skill-item">
+        <i class="fas fa-code skill-icon"></i>
+        <p>Programação</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-database skill-icon"></i>
+        <p>Banco de Dados</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-cogs skill-icon"></i>
+        <p>Design de Software</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-server skill-icon"></i>
+        <p>Servidores</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-music skill-icon"></i>
+        <p>Música</p>
+         <div class="skill-item">
+        <i class="fas fa-industry skill-icon"></i>
+        <p>Centro de Usinagem</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2 class="section-title">Projetos</h2>
+    <div class="section-content">
+      <div class="project-card">
+        <h3 class="project-title">Projeto 1</h3>
+        <p class="project-description">Descrição breve do projeto.</p>
+        <div class="project-links">
+          <a href="#">Ver Projeto</a>
+          <a href="#">Código Fonte</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">Projeto 2</h3>
+        <p class="project-description">Descrição breve do projeto.</p>
+        <div class="project-links">
+          <a href="#">Ver Projeto</a>
+          <a href="#">Código Fonte</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="idiomas">
+    <h2 class="section-title">Idiomas</h2>
+    <div>
+      <br> Francês - intermediário </br>
+      Inglês - estou estudando / iniciante por enquanto
+    </div>
+  </section>
+
+  <!-- Seção de Depoimentos -->
+  <section id="certificacoes">
+  <h2 class="section-title">Certificações</h2>
+  <div class="section-content">
+    <div class="certification">
+      <img src="img/certificado 01.jpg" alt="Certificação 1">
+      <p>Certificação em operação e programação CNC </p>
+    </div>
+    <div class="certification">
+      <img src="img/certificado 2.jpg" alt="Certificação 2">
+      <p>Certificação em Desenvolvimento Back-End </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Siga-me nas redes sociais:</p>
+  <a href="https://www.linkedin.com/in/wesley-moura-569802191/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/wesmoura" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/wesguit?igsh=M2E4bGhkbzk5bzg5" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/5547988508092" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <p>wesmoura6@email.com </p>
+</footer>
+
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('.container section');
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    showSection('resumo'); // Mostra a seção Resumo inicialmente
+
+    // Adicione eventos de clique para cada botão de navegação
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const sectionId = link.getAttribute('data-section');
+        showSection(sectionId); // Mostra a seção correspondente ao botão clicado
+      });
+    });
+  });
+</script>
+</body>
+
+</html>
