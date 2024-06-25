@@ -4,204 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Wesley Moura, Desenvolvedor Back-End C# Jr">
+  <meta name="keywords" content="Wesley Moura, Desenvolvedor, Back-End, C#, Portfólio">
+  <meta name="author" content="Wesley Moura">
+  <meta property="og:title" content="Portfólio de Wesley Moura">
+  <meta property="og:description" content="Portfólio de Wesley Moura, Desenvolvedor Back-End C# Jr">
+  <meta property="og:image" content="assets/img/wesdev.jpg">
+  <meta property="og:url" content="https://www.seusite.com">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Wesley Moura</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-
-    header {
-      background-image: url('img/portfolio5.jpg');
-      background-size: cover;
-      background-position: center;
-      background-color: #333;
-      color: #ffffff;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      font-size: 36px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 24px;
-      font-weight: normal;
-    }
-
-    .profile-image {
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    nav {
-      background-color: #333;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    .nav-link {
-      border: none;
-      background: none;
-      cursor: pointer;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #ddd;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-      color: #333;
-    }
-
-    .section-title {
-      margin-bottom: 20px;
-      font-size: 28px;
-      background-color: #fff;
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 5px;
-    }
-
-    .section-content {
-      margin-bottom: 30px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .skill-item {
-      text-align: center;
-      width: 150px;
-      margin-bottom: 20px;
-    }
-
-    .skill-icon {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .project-card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .project-title {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .project-description {
-      margin-bottom: 10px;
-    }
-
-    .project-links a {
-      color: #f0ebeb;
-      margin-right: 10px;
-      transition: color 0.3s ease;
-    }
-
-    .project-links a:hover {
-      color: #666;
-    }
-
-    footer {
-      background-color: #333;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 50px;
-    }
-
-    footer a i {
-      font-size: 100px;
-      margin-right: 10px;
-      transition: font-size 0.3s ease;
-      color: #fff; /* Altera a cor dos ícones para branco */
-    }
-
-    footer a:hover i {
-      font-size: 120px;
-    }
-
-    /* Estilos para a seção de depoimentos */
-    #depoimentos {
-      margin-bottom: 50px;
-    }
-
-    .testimonial {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .testimonial img {
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-
-    .testimonial p {
-      margin-bottom: 10px;
-    }
-
-    .testimonial span {
-      font-style: italic;
-    }
-
-    /* Estilos para a seção de certificações */
-    #certificacoes .certification img {
-      width: 200%;
-      height: auto;
-      max-width: 380px;
-      display: block;
-      margin: auto;
-    }
-
-    @media (max-width: 768px) {
-      .skills {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .skill-item {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-  <img src="img/wesdev.jpg" alt="Foto de Wesley Moura" class="profile-image">
+  <img src="assets/img/wesdev.jpg" alt="Foto de Wesley Moura" class="profile-image">
   <h1>Wesley Moura</h1>
   <h2>Desenvolvedor Back-End C# Jr</h2>
 </header>
 
 <nav>
-  <button class="nav-link" data-section="Sobre Mim">Sobre Mim</button>
+  <button class="nav-link" data-section="sobre-mim">Sobre Mim</button>
   <button class="nav-link" data-section="experiencia">Experiência</button>
   <button class="nav-link" data-section="formacao">Formação</button>
   <button class="nav-link" data-section="habilidades">Habilidades</button>
@@ -211,8 +37,8 @@
 </nav>
 
 <div class="container">
-  <section id="Sobre Mim">
-    <h2 class="section-title">Sobre Mim </h2>
+  <section id="sobre-mim">
+    <h2 class="section-title">Sobre Mim</h2>
     <div class="section-content">
       <p>Sou Wesley Moura, um profissional novo na área de tecnologia, focado em HTML, CSS, Java e C#. Tenho me dedicado intensamente ao desenvolvimento Back-End, buscando sempre ampliar meus conhecimentos.</p>
       <p>Minha trajetória inclui experiência em outras áreas, como música e operação de máquinas, o que me proporcionou habilidades variadas e um olhar multidisciplinar.</p>
@@ -223,11 +49,11 @@
   <section id="experiencia">
     <h2 class="section-title">Experiência Profissional</h2>
     <div class="section-content">
-      <p><strong> OPERADOR REGULADOR E PROGRAMADOR DE MAQUINAS </strong><br>
+      <p><strong>OPERADOR REGULADOR E PROGRAMADOR DE MÁQUINAS</strong><br>
         Blumenau<br>
-        - Operador de maquinas injetoras.<br>
-        - Regulador de maquinas Pneumáticas.<br>
-        - Operador de maquinas CNC.<br>
+        - Operador de máquinas injetoras.<br>
+        - Regulador de máquinas pneumáticas.<br>
+        - Operador de máquinas CNC.<br>
         - Operador de empilhadeira.</p>
     </div>
   </section>
@@ -248,7 +74,7 @@
         <ul>
             <li>Linguagem C#</li>
             <li>Criação e Manipulação de API.NET e ASP.NET</li>
-            <li>Desenvolvimento Front-End: HTML, CSS, e JavaScript</li>
+            <li>Desenvolvimento Front-End: HTML, CSS e JavaScript</li>
         </ul>
         <p>Estou há cerca de um ano focado no estudo de programação e busco continuamente aprimorar meus conhecimentos por meio de cursos gratuitos. E agora estou cursando no primeiro semestre de Engenharia de Software para alcançar um nível mais avançado na área.</p>
 
@@ -279,11 +105,11 @@
       <div class="skill-item">
         <i class="fas fa-music skill-icon"></i>
         <p>Música</p>
-         <div class="skill-item">
+      </div>
+      <div class="skill-item">
         <i class="fas fa-industry skill-icon"></i>
         <p>Centro de Usinagem</p>
       </div>
-      
     </div>
   </section>
 
@@ -311,26 +137,32 @@
 
   <section id="idiomas">
     <h2 class="section-title">Idiomas</h2>
-    <div>
-      <br> Francês - intermediário </br>
-      Inglês - estou estudando / iniciante por enquanto
+    <div class="section-content">
+      <p>Francês - intermediário</p>
+      <p>Inglês - estou estudando / iniciante por enquanto</p>
     </div>
   </section>
 
-  <!-- Seção de Depoimentos -->
   <section id="certificacoes">
-  <h2 class="section-title">Certificações</h2>
-  <div class="section-content">
-    <div class="certification">
-      <img src="img/certificado 01.jpg" alt="Certificação 1">
-      <p>Certificação em operação e programação CNC </p>
+    <h2 class="section-title">Certificações</h2>
+    <div class="section-content">
+      <div class="certification">
+        <img src="assets/img/certificado01.jpg" alt="Certificação 1">
+        <p>Certificação em operação e programação CNC</p>
+      </div>
+      <div class="certification">
+        <img src="assets/img/certificado02.jpg" alt="Certificação 2">
+        <p>Certificação em Desenvolvimento Back-End</p>
+      </div>
+      <!--
+        <div class="certification">
+          <img src="assets/img/certificdo3.jpg" alt="Certificação 3">
+          <p>Introdução a plataforma Java</p>
+        </div>
+      -->
     </div>
-    <div class="certification">
-      <img src="img/certificado 2.jpg" alt="Certificação 2">
-      <p>Certificação em Desenvolvimento Back-End </p>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <footer>
   <p>Siga-me nas redes sociais:</p>
@@ -341,31 +173,6 @@
   <p>wesmoura6@email.com </p>
 </footer>
 
-<script>
-  function showSection(sectionId) {
-    const sections = document.querySelectorAll('.container section');
-    sections.forEach(section => {
-      section.style.display = 'none';
-    });
-
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.style.display = 'block';
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    showSection('resumo'); // Mostra a seção Resumo inicialmente
-
-    // Adicione eventos de clique para cada botão de navegação
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const sectionId = link.getAttribute('data-section');
-        showSection(sectionId); // Mostra a seção correspondente ao botão clicado
-      });
-    });
-  });
-</script>
 </body>
 
 </html>
